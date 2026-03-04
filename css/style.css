@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #054743;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+header .logo-text {
+  font-weight: 800;
+  color: #0ff51e;
+  margin-right: 170px;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 35px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #0ff51e;
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  padding: 100px 120px 50px 200px;
+}
+
+.home-img img {
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+.home-content {
+  text-align: justify;
+}
+
+.social-links {
+  margin: 10px 0;
+}
+
+ul.social-links {
+  margin-left: -40px;
+  list-style: none;
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 15px;
+  border-radius: 5%;
+  border: 1px solid #020a1b;
+  padding: 5px 10px;
+}
+
+.social-links li:hover {
+  background-color: #0ff51e;
+}
+
+.social-links li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.about-img img {
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 3px 5px 30px #03506e;
+  object-fit: cover;
+}
+
+.about-content {
+  margin-left: 100px;
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 33px;
+}
+
+.about-content p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 40px;
+}
+
+.projects-content {
+  margin-left: 100px;
+  max-width: 600px;
+}
+
+/* Footer */
+footer {
+  background-color: #054743;
+  color: gray;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .logo-text {
+    margin: auto;
+  }
+
+  header ul {
+    margin-top: 10px;
+  }
+
+  /* Home Section */
+  section.home-section {
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 130px;
+  }
+
+  .home-img img {
+    display: none;
+  }
+
+  /* About Section */
+  section.about-section {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .about-content {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
