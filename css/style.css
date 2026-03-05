@@ -120,6 +120,7 @@ ul.social-links {
 
 /* Projects Article */
 #projects h2 {
+  font-size: 33px;
   text-align: center;
 }
 
@@ -148,6 +149,50 @@ aside > p {
   margin: 0.5rem;
 }
 
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-section h2 {
+  font-size: 33px;
+  margin: 18px 0;
+}
+
+.contact-section form input,
+textarea,
+select {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 3px solid gray;
+  outline: none;
+  resize: none;
+}
+
+.contact-section form input:focus,
+textarea:focus,
+select:focus {
+  border: 3px solid #0ff51e;
+}
+
+.contact-section button {
+  background-color: gray;
+  color: white;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-section button:hover {
+  background-color: #0ff51e;
+  color: black;
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   background-color: #054743;
@@ -172,7 +217,7 @@ footer {
   }
 
   /* Home Section */
-  section.home-section {
+  .home-section {
     flex-direction: column;
     padding: 40px;
     padding-top: 130px;
@@ -182,7 +227,7 @@ footer {
   }
 
   /* About Section */
-  section.about-section {
+  .about-section {
     flex-direction: column;
     padding: 40px;
   }
@@ -193,6 +238,10 @@ footer {
   }
   .about-img img {
     display: none;
+  }
+
+  .about-content h2 {
+    text-align: center;
   }
 
   /* Projects Article */

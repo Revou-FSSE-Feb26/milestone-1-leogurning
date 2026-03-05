@@ -71,7 +71,7 @@
         <figure class="home-img">
           <img
             src="./images/profile-photo-leon01.png"
-            alt="home-image"
+            alt="profile-image"
             width="350"
           />
         </figure>
@@ -138,7 +138,7 @@
         <h2>My Projects</h2>
         <article class="projects-article">
           <article class="projects-content">
-            <h2>HTML Semantic Projects</h2>
+            <h3>HTML Semantic Projects</h3>
             <p>
               This project focuses on complex content hierarchy. It demonstrates
               how to handle multiple articles, sections, and nested navigation
@@ -172,7 +172,7 @@
             </ul>
           </article>
           <article class="projects-content">
-            <h2>Portfolio Projects</h2>
+            <h3>Portfolio Projects</h3>
             <p>
               The goal is to develop a high-performance, single-page (or
               multi-page) website that serves as a central repository for your
@@ -199,16 +199,57 @@
       <hr />
 
       <section class="contact-section" id="contact">
-        <div class="projects-content">
-          <h2>Contact Me</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-            quia minus repellat quis culpa ut, repudiandae quae qui autem
-            consequatur dolorum ullam sunt voluptas? Totam cupiditate omnis
-            voluptas neque adipisci?
-          </p>
-        </div>
+        <h2>Contact Me</h2>
+        <p>
+          I’m always open to discussing new opportunities. Please use the form
+          below to get in touch.
+        </p>
+        <form action="" method="get">
+          <label for="name">Name: </label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            required
+          />
+          <br />
+          <label for="email">Email: </label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <br />
+          <label for="message">Message: </label>
+          <br />
+          <textarea
+            name="message"
+            id="date"
+            rows="4"
+            cols="30"
+            placeholder="Send Message"
+            required
+          ></textarea>
+          <br />
+          <label for="reason">Reason for Contact:</label>
+          <br />
+          <select name="reason" id="reason">
+            <option value="">--Please choose an option--</option>
+            <option value="upskill">For Upskilling</option>
+            <option value="work">Searching for work</option>
+            <option value="education">Just for Education</option>
+          </select>
+          <br /><br />
+          <button type="submit" value="Submit">Submit</button>
+          <button type="reset" value="Reset">Reset</button>
+        </form>
       </section>
+      <hr />
     </main>
     <footer>
       <p>Copyright &copy; 2026 - by Leonard.</p>
