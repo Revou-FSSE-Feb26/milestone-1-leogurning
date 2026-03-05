@@ -96,8 +96,8 @@ ul.social-links {
 }
 
 .about-img img {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   padding: 2px;
   border-radius: 50%;
   box-shadow: 3px 5px 30px #03506e;
@@ -107,6 +107,7 @@ ul.social-links {
 .about-content {
   margin-left: 100px;
   max-width: 600px;
+  text-align: justify;
 }
 
 .about-content h2 {
@@ -115,12 +116,12 @@ ul.social-links {
 
 .about-content p {
   font-size: 15px;
-  text-align: justify;
 }
 
 /* Projects Section */
 .projects-section {
-  padding: 40px;
+  padding: 60px;
+  display: flex;
 }
 
 .projects-content {
@@ -157,8 +158,11 @@ footer {
     padding: 40px;
     padding-top: 130px;
   }
-
   .home-img img {
+    margin-left: 10px;
+  }
+
+  .about-img img {
     display: none;
   }
 
