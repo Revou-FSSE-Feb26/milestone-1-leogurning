@@ -52,6 +52,16 @@ nav ul li a:hover {
   text-align: justify;
 }
 
+/* About */
+#about table {
+  border: 2px solid gray;
+}
+
+#about th,
+#about td {
+  border: 1px solid gray;
+}
+
 /* Footer */
 footer {
   background-color: #054743;

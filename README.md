@@ -4,6 +4,12 @@ A clean and professional portfolio website designed to showcase my creative work
 
 ---
 
+## 🔗 Live Demo
+
+Check it out here: [https://revou-fsse-feb26.github.io/milestone-1-leogurning/]
+
+---
+
 ## 📖 Overview
 
 This website serves as my digital business card. The goal was to create a fast-loading, visually appealing space that provides potential employers or clients with everything they need to know about my work in one place.
@@ -27,7 +33,7 @@ This website serves as my digital business card. The goal was to create a fast-l
 
 ### CSS3
 
-- **Flex & CSS:** Utilized simple CSS for creating a good layout of header, Navbar, and footer.
+- **Flex & CSS:** Utilized simple CSS for creating a good layout of header, Navbar, table and footer.
 - **Google Fonts Integration:** Using google fonts to enhance readability.
 
 ---
