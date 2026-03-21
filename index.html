@@ -9,9 +9,13 @@
   <body>
     <header>
       <h1>
-        <a href="./index.html"
+        <!-- <a href="./index.html"
           ><span class="logo-text">LIFE-LONG LEARNER</span></a
-        >
+        > -->
+        <a href="#home" class="logo">
+          <img class="logo-icon" src="./images/bird.jpg" alt="" />
+          <span class="logo-text">LIFE-LONG LEARNER</span>
+        </a>
       </h1>
 
       <nav>
@@ -29,240 +33,267 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
+        <div class="mobile-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+      <!-- Mobile Navigation Menu -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
     </header>
-    <main>
-      <!-- Home Section -->
-      <section id="home">
-        <h2>Hello, I'm <span>Leonard (Leon)</span></h2>
-        <p class="content">
-          I am a proactive and enthusiastic individual with the ability to work
-          well both independently and in a team. I have high level of
-          professionalism and very organized person with excellent oral and
-          written communication skills as well as creative and proactive type
-          with outstanding networking skills. I am also fond of Software
-          Enginnering and still gaining skills in Frontend Technologies, such as
-          HTML, CSS, and JavaScript to have experiences in creating inovative
-          and interactive web applications. I'm always looking for new
-          opportunities to grow and challenge myself, and i am excited to see
-          where life will take me next.
-        </p>
-        <!-- Social Links -->
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/leonard-gurning/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://instagram.com/leogurning" target="_blank"
-              >Instagram</a
-            >
-          </li>
-        </ul>
+    <div class="container">
+      <aside>
+        <nav class="desktop-nav">
+          <img class="logo-icon" src="./images/bird.jpg" alt="" />
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-        <figure>
-          <img
-            src="./images/profile-photo-leon01.png"
-            alt="profile-image"
-            width="350"
-          />
-        </figure>
-      </section>
-      <hr />
+      <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+          <h2>Hello, I'm <span>Leonard (Leon)</span></h2>
+          <p class="content">
+            I am a proactive and enthusiastic individual with the ability to
+            work well both independently and in a team. I have high level of
+            professionalism and very organized person with excellent oral and
+            written communication skills as well as creative and proactive type
+            with outstanding networking skills. I am also fond of Software
+            Enginnering and still gaining skills in Frontend Technologies, such
+            as HTML, CSS, and JavaScript to have experiences in creating
+            inovative and interactive web applications. I'm always looking for
+            new opportunities to grow and challenge myself, and i am excited to
+            see where life will take me next.
+          </p>
+          <!-- Social Links -->
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/leonard-gurning/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com/leogurning" target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
 
-      <!-- About Section  -->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I graduated from Bandung Institute of Technology, class of 2004. I
-          also already have experiences working in the Technology and Banking
-          fields as below:
-        </p>
-        <table>
-          <tr>
-            <th>Company Name</th>
-            <th>Tenure</th>
-            <th>Role</th>
-          </tr>
-          <tr>
-            <th><strong>PT DBSI</strong></th>
-            <td><strong>2019 - 2023</strong></td>
-            <td>Global Transaction Services, Project manager.</td>
-          </tr>
-          <tr>
-            <th><strong>HSBC</strong></th>
-            <td><strong>2008 - 2018</strong></td>
-            <td>Cash Management manager, Project manager.</td>
-          </tr>
-          <tr>
-            <th><strong>Accenture</strong></th>
-            <td><strong>2005 - 2008</strong></td>
-            <td>Java & SAP consultant.</td>
-          </tr>
-        </table>
-        <p>
-          Recently, I have spent time turning coffee into responsive,
-          user-centric web applications. My toolkit is built on the "Holy
-          Trinity" of front-end development and to sharpen my skills on:
-        </p>
-        <ul>
-          <li>
-            <strong>HTML:</strong> Building the semantic bones of the internet.
-          </li>
-          <li>
-            <strong>CSS:</strong> Making sure those bones look incredible (and
-            stay responsive).
-          </li>
-          <li>
-            <strong>JavaScript:</strong> Bringing everything to life with logic
-            and interactivity.
-          </li>
-        </ul>
-        <br />
-        <p>
-          I’m passionate about the intersection of design and
-          engineering—ensuring that every site I build isn't just a pretty face,
-          but a fast, functional tool for the user. When I’m not debugging a
-          tricky CSS layout, you can find me exploring new web standards and
-          optimizing load times.
-        </p>
-      </section>
-      <hr />
+          <figure>
+            <img
+              src="./images/profile-photo-leon01.png"
+              alt="profile-image"
+              width="350"
+            />
+          </figure>
+        </section>
+        <hr />
 
-      <!-- Projects Article  -->
-      <article id="projects">
-        <h2>My Projects</h2>
-        <ol type="1">
-          <li>
-            <!-- Project1 article content  -->
-            <article>
-              <h3>HTML Semantic Projects</h3>
-              <p>
-                This project focuses on complex content hierarchy. It
-                demonstrates how to handle multiple articles, sections, and
-                nested navigation without falling into the "div soup" trap.
-              </p>
+        <!-- About Section  -->
+        <section id="about" class="about">
+          <h2>About Me</h2>
+          <p>
+            I graduated from Bandung Institute of Technology, class of 2004. I
+            also already have experiences working in the Technology and Banking
+            fields as below:
+          </p>
+          <table>
+            <tr>
+              <th>Company Name</th>
+              <th>Tenure</th>
+              <th>Role</th>
+            </tr>
+            <tr>
+              <th><strong>PT DBSI</strong></th>
+              <td><strong>2019 - 2023</strong></td>
+              <td>Global Transaction Services, Project manager.</td>
+            </tr>
+            <tr>
+              <th><strong>HSBC</strong></th>
+              <td><strong>2008 - 2018</strong></td>
+              <td>Cash Management manager, Project manager.</td>
+            </tr>
+            <tr>
+              <th><strong>Accenture</strong></th>
+              <td><strong>2005 - 2008</strong></td>
+              <td>Java & SAP consultant.</td>
+            </tr>
+          </table>
+          <p>
+            Recently, I have spent time turning coffee into responsive,
+            user-centric web applications. My toolkit is built on the "Holy
+            Trinity" of front-end development and to sharpen my skills on:
+          </p>
+          <ul>
+            <li>
+              <strong>HTML:</strong> Building the semantic bones of the
+              internet.
+            </li>
+            <li>
+              <strong>CSS:</strong> Making sure those bones look incredible (and
+              stay responsive).
+            </li>
+            <li>
+              <strong>JavaScript:</strong> Bringing everything to life with
+              logic and interactivity.
+            </li>
+          </ul>
+          <br />
+          <p>
+            I’m passionate about the intersection of design and
+            engineering—ensuring that every site I build isn't just a pretty
+            face, but a fast, functional tool for the user. When I’m not
+            debugging a tricky CSS layout, you can find me exploring new web
+            standards and optimizing load times.
+          </p>
+        </section>
+        <hr />
 
-              <ul>
-                <li>
-                  <strong>Key Semantic Features:</strong>
-                  <ol type="a">
-                    <li>
-                      article & section: : Used to encapsulate independent
-                      stories and thematic groupings.
-                    </li>
-                    <li>
-                      aside: For related links, advertisements, or "quick facts"
-                      that supplement the main content.
-                    </li>
-                    <li>
-                      figure & figcaption: To provide context to images, making
-                      them more than just visual fluff.
-                    </li>
-                  </ol>
-                </li>
-                <br />
-                <li>
-                  <strong>The Result:</strong> A high-performance news site that
-                  SEO crawlers love because they can instantly identify the most
-                  important headlines.
-                </li>
-              </ul>
-            </article>
-          </li>
-          <li>
-            <!-- Project2 article content  -->
-            <article>
-              <h3>Portfolio Projects</h3>
-              <p>
-                The goal is to develop a high-performance, single-page (or
-                multi-page) website that serves as a central repository for your
-                work, biography, and contact information.
-              </p>
-              <aside>
-                <p>The Tech stack is using HTML5 and CSS</p>
-              </aside>
-              <p>
-                Before coding, it's vital to visualize how the elements sit on
-                the page. Using a "Box Model" approach ensures the layout
-                doesn't break when content is added.
-              </p>
-              <figure>
-                <img
-                  src="./images/portfolio-project.png"
-                  alt="portfolio-image"
-                  width="500"
-                />
-                <figcaption>This is the Portfolio project website</figcaption>
-              </figure>
-            </article>
-          </li>
-        </ol>
-      </article>
-      <hr />
+        <!-- Projects Article  -->
+        <article id="projects" class="projects">
+          <h2>My Projects</h2>
+          <ol type="1">
+            <li>
+              <!-- Project1 article content  -->
+              <article>
+                <h3>HTML Semantic Projects</h3>
+                <p>
+                  This project focuses on complex content hierarchy. It
+                  demonstrates how to handle multiple articles, sections, and
+                  nested navigation without falling into the "div soup" trap.
+                </p>
 
-      <!-- Contact section  -->
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-          I’m always open to discussing new opportunities. Please use the form
-          below to get in touch.
-        </p>
-        <!-- Form of Contact me  -->
-        <form action="" method="get">
-          <label for="name">Name: </label>
-          <br />
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Full Name"
-            required
-          />
-          <br />
-          <label for="email">Email: </label>
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-          />
-          <br />
-          <label for="message">Message: </label>
-          <br />
-          <textarea
-            name="message"
-            id="message"
-            rows="4"
-            cols="30"
-            placeholder="Send Message"
-            required
-          ></textarea>
-          <br />
-          <label for="reason">Reason for Contact:</label>
-          <br />
-          <select name="reason" id="reason">
-            <option value="">--Please choose an option--</option>
-            <option value="upskill">For Upskilling</option>
-            <option value="work">Searching for work</option>
-            <option value="education">Just for Education</option>
-          </select>
-          <br /><br />
-          <button type="submit" value="Submit">Submit</button>
-          <button type="reset" value="Reset">Reset</button>
-        </form>
-      </section>
-      <hr />
-    </main>
+                <ul>
+                  <li>
+                    <strong>Key Semantic Features:</strong>
+                    <ol type="a">
+                      <li>
+                        article & section: : Used to encapsulate independent
+                        stories and thematic groupings.
+                      </li>
+                      <li>
+                        aside: For related links, advertisements, or "quick
+                        facts" that supplement the main content.
+                      </li>
+                      <li>
+                        figure & figcaption: To provide context to images,
+                        making them more than just visual fluff.
+                      </li>
+                    </ol>
+                  </li>
+                  <br />
+                  <li>
+                    <strong>The Result:</strong> A high-performance news site
+                    that SEO crawlers love because they can instantly identify
+                    the most important headlines.
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li>
+              <!-- Project2 article content  -->
+              <article>
+                <h3>Portfolio Projects</h3>
+                <p>
+                  The goal is to develop a high-performance, single-page (or
+                  multi-page) website that serves as a central repository for
+                  your work, biography, and contact information.
+                </p>
+                <aside>
+                  <p>The Tech stack is using HTML5 and CSS</p>
+                </aside>
+                <p>
+                  Before coding, it's vital to visualize how the elements sit on
+                  the page. Using a "Box Model" approach ensures the layout
+                  doesn't break when content is added.
+                </p>
+                <figure>
+                  <img
+                    src="./images/portfolio-project.png"
+                    alt="portfolio-image"
+                    width="500"
+                  />
+                  <figcaption>This is the Portfolio project website</figcaption>
+                </figure>
+              </article>
+            </li>
+          </ol>
+        </article>
+        <hr />
 
+        <!-- Contact section  -->
+        <section id="contact" class="contact">
+          <h2>Contact Me</h2>
+          <p>
+            I’m always open to discussing new opportunities. Please use the form
+            below to get in touch.
+          </p>
+          <!-- Form of Contact me  -->
+          <form action="" method="get">
+            <label for="name">Name: </label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              required
+            />
+            <br />
+            <label for="email">Email: </label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <br />
+            <label for="message">Message: </label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              cols="30"
+              placeholder="Send Message"
+              required
+            ></textarea>
+            <br />
+            <label for="reason">Reason for Contact:</label>
+            <br />
+            <select name="reason" id="reason">
+              <option value="">--Please choose an option--</option>
+              <option value="upskill">For Upskilling</option>
+              <option value="work">Searching for work</option>
+              <option value="education">Just for Education</option>
+            </select>
+            <br /><br />
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+          </form>
+        </section>
+        <hr />
+      </main>
+    </div>
     <!-- Footer information -->
     <footer>
       <p>Copyright &copy; 2026 - by Leonard.</p>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
