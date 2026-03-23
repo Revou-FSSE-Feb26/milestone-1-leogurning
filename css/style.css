@@ -272,15 +272,6 @@ ul.social-links {
   color: var(--dark);
 }
 
-/* #home ul {
-  display: flex;
-  list-style: none;
-}
-
-#home ul li {
-  margin-right: 35px;
-} */
-
 /* About */
 #about table {
   border: 2px solid gray;
@@ -289,6 +280,54 @@ ul.social-links {
 #about th,
 #about td {
   border: 1px solid gray;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 3px 5px 30px #03506e;
+  object-fit: cover;
+}
+
+.about-content {
+  margin-left: 100px;
+  text-align: justify;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+td,
+th {
+  border: 1px solid var(--dark);
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background: linear-gradient(45deg, var(--dark), var(--secondary));
+  color: var(--light);
 }
 
 /* Footer */
@@ -321,9 +360,24 @@ footer {
   .home-img img {
     margin-left: 10px;
   }
+  /* About Section */
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-content {
+    margin-left: 0;
+  }
+  .about-img img {
+    display: none;
+  }
+
+  .about-content h2 {
+    text-align: center;
+  }
 }
 
-@media screen and (min-width: 513px) and (max-width: 758px) {
+@media screen and (min-width: 513px) and (max-width: 797px) {
   header .logo-text {
     display: none;
   }
@@ -339,9 +393,24 @@ footer {
   .home-img img {
     margin-left: 10px;
   }
+  /* About Section */
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-content {
+    margin-left: 0;
+  }
+  .about-img img {
+    display: none;
+  }
+
+  .about-content h2 {
+    text-align: center;
+  }
 }
 
-@media screen and (min-width: 759px) and (max-width: 1024px) {
+@media screen and (min-width: 798px) and (max-width: 1208px) {
   .desktop-nav {
     display: none;
   }
@@ -351,7 +420,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1209px) {
   /* .container {
     display: flex;
     column-gap: 20px;
