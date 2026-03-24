@@ -29,6 +29,40 @@ This website serves as my digital business card. The goal was to create a fast-l
 - **Reset button:** A button in the Contact Us form to reset all of input values given.
 - **Implementation of `<aside>`, `<figure>`+`<figcaption>`, nested `<article>`:** These are semantic HTML implemented in the website to have clean and more organized Projects information.
 
+- **CSS Box model Implementation:** Every element in CSS is essentially a box. It consists of Margin, Border, Padding, and Content. Using `box-sizing: border-box;` globally to ensure that padding and borders are included in the element's total width and height.
+- **CSS Grid Display:** Grid is perfect for the Heading, Aside, Main, and Footer structure. Define `grid-template-areas` to literally name where the "Header" "Aside" "Main/Content" "Footer" should go.
+  ![alt text](images/grid.png)
+
+- **CSS Flex Display:** Inside the header, use Flexbox for the logo and navigation. Inside the Home/Hero, About, Projects section, also use Flex display and Flex wrap display in Projects to align and adjust items correctly in the layout adaptively.
+  ![alt text](images/flex-nav01.png)
+
+  ![alt text](images/flex-nav02.png)
+
+  ![alt text](images/flex.png)
+
+- **Google Font and Typography:** Implement Google Fonts, typograhy Font with various weight, size, color and multiple colors background (with text fill color and background clip). Also using linear gradient utility to combine several colors and its gradient
+
+  ![alt text](images/typogph.png)
+
+- **Responsive Design & Media Queries:** This is how to make the site "adaptive.". Define the correct layout for each different screen sizes (mobile, tab, desktop). For Desktop, Aside will be displayed for Side Sticky Navigation. The Hamburger Menu will be displayed only for mobile device screen
+
+![alt text](images/grid.png)
+
+![alt text](images/tab.png)
+
+- **The Adaptive Navigation Bar:** This is to implement adaptive Navigation bar for Desktop, Tab, Mobile devices.
+  1. Only Desktop: the `Aside` is visible on the left, and shows all navigation links.
+  2. Tab and Mobile: `Aside` disappear and `Header` Navigation bar will be displayed. Hamburger menu will be displayed only in Mobile.
+     ![alt text](images/grid.png)
+
+  ![alt text](images/flex-nav01.png)
+
+  ![alt text](images/flex-nav02.png)
+
+  ![alt text](images/mob-nav.png)
+
+- **Interaction: Pseudo-classes & Selectors:** These allow you to style elements based on their state or position (hover, nth-child). Also use `transform` property to rotate, scale, or move (translate) elements without breaking the document flow.
+
 ---
 
 ## 🛠️ Technology Used
@@ -41,8 +75,12 @@ This website serves as my digital business card. The goal was to create a fast-l
 
 ### CSS3
 
-- **Flex & CSS:** Utilized simple CSS for creating a good layout of header, Navbar, table and footer.
+- **Grid and Flex Display & CSS:** Utilized simple CSS for creating a good layout of header, Navbar, table and footer.
 - **Google Fonts Integration:** Using google fonts to enhance readability.
+
+### JAVASCRIPT
+
+- **JavaScript: The Hamburger Toggle Class:** Instead of manually changing styles in JS, we use a Class to manage the state. The JS simply "toggles" a CSS class (like .active), and CSS handles the visual transition
 
 ---
 
