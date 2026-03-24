@@ -46,14 +46,15 @@ This website serves as my digital business card. The goal was to create a fast-l
 
 - **Responsive Design & Media Queries:** This is how to make the site "adaptive.". Define the correct layout for each different screen sizes (mobile, tab, desktop). For Desktop, Aside will be displayed for Side Sticky Navigation. The Hamburger Menu will be displayed only for mobile device screen
 
-![alt text](images/grid.png)
+  ![alt text](images/grid.png)
 
-![alt text](images/tab.png)
+  ![alt text](images/tab.png)
 
 - **The Adaptive Navigation Bar:** This is to implement adaptive Navigation bar for Desktop, Tab, Mobile devices.
   1. Only Desktop: the `Aside` is visible on the left, and shows all navigation links.
   2. Tab and Mobile: `Aside` disappear and `Header` Navigation bar will be displayed. Hamburger menu will be displayed only in Mobile.
-     ![alt text](images/grid.png)
+
+  ![alt text](images/grid.png)
 
   ![alt text](images/flex-nav01.png)
 
