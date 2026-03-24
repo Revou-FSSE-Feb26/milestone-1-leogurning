@@ -9,10 +9,7 @@
   <body>
     <header>
       <h1>
-        <!-- <a href="./index.html"
-          ><span class="logo-text">LIFE-LONG LEARNER</span></a
-        > -->
-        <a href="#home" class="logo">
+        <a href="./index.html" class="logo">
           <img class="logo-icon" src="./images/bird.jpg" alt="" />
           <span class="logo-text">LIFE-LONG LEARNER</span>
         </a>
@@ -63,9 +60,10 @@
     <main>
       <!-- Home Section -->
       <section id="home" class="home">
-        <div>
+        <div class="bg-overlay"></div>
+        <div class="home-content">
           <div>
-            <h2>Hello, I'm <span>Leonard (Leon)</span></h2>
+            <h1>Hello, I'm <span>Leonard (Leon)</span></h1>
             <p class="content">
               I am a proactive and enthusiastic individual with the ability to
               work well both independently and in a team. I have high level of
@@ -97,11 +95,7 @@
           </ul>
         </div>
         <figure class="home-img">
-          <img
-            src="./images/profile-photo-leon01.png"
-            alt="profile-image"
-            width="350"
-          />
+          <img src="./images/profile-photo-leon01.png" alt="profile-image" />
         </figure>
       </section>
 
@@ -175,7 +169,11 @@
         <article class="projects-article">
           <!-- Project1 article content  -->
           <article class="projects-content">
-            <h3>HTML Semantic Projects</h3>
+            <div class="project-title">
+              <h3>HTML Semantic Projects</h3>
+              <span class="dot-bar">...</span>
+            </div>
+
             <p>
               This project focuses on complex content hierarchy. It demonstrates
               how to handle multiple articles, sections, and nested navigation
@@ -211,7 +209,11 @@
 
           <!-- Project2 article content  -->
           <article class="projects-content">
-            <h3>Portfolio Projects</h3>
+            <div class="project-title">
+              <h3>Portfolio Projects</h3>
+              <span class="dot-bar">...</span>
+            </div>
+
             <p>
               The goal is to develop a high-performance, single-page (or
               multi-page) website that serves as a central repository for your

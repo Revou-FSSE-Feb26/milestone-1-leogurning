@@ -11,6 +11,8 @@
   --grayer: #f2f2f2;
   --success: #00ff88;
   --darkblue: #03506e;
+  --cblue: #0575e6;
+  --cred: #ce3232;
 }
 
 * {
@@ -215,16 +217,52 @@ main {
   grid-area: content;
 }
 
+.bg-overlay {
+  background: linear-gradient(to right, var(--cblue), var(--success));
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
 /* Home Section */
 .home {
+  background: url("../images/home-bg.jpg") no-repeat center center;
+  background-size: cover;
   display: flex;
   margin: 0;
-  background: #00ffff;
+  position: relative;
+  color: white;
+  font-size: 1rem;
+  align-items: center;
+  padding: 2rem 2rem;
+  scroll-margin-top: 4rem;
+}
+
+.home span {
+  background: linear-gradient(45deg, var(--light), var(--primary));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home h1 {
+  margin-bottom: 2rem;
+}
+
+.home-content,
+.home-img {
+  z-index: 10;
 }
 
 .home-img img {
   margin-top: 30px;
   margin-left: 30px;
+  max-width: 350px;
+  z-index: 10;
 }
 
 .social-links {
@@ -240,21 +278,21 @@ ul.social-links {
 .social-links li {
   margin-right: 15px;
   border-radius: 15px;
-  border: 2px solid var(--gray);
+  border: 2px solid var(--light);
   padding: 5px 10px;
   transition: all 0.3s ease;
-  background: linear-gradient(45deg, var(--primary), var(--light));
+  background: transparent;
 }
 
 .social-links li:hover {
-  /* background-color: #0ff51e; */
-  background: linear-gradient(45deg, var(--primary), var(--success));
+  background: #ce3232;
+  border-color: transparent;
 }
 
 .social-links li a {
   text-decoration: none;
   font-size: 18px;
-  color: var(--dark);
+  color: var(--light);
 }
 
 /* About */
@@ -327,6 +365,19 @@ th {
   flex-grow: 1;
   flex-basis: 350px;
   text-align: justify;
+  color: var(--darker);
+  background-color: var(--light);
+}
+
+.projects-content h3 {
+  padding-bottom: 6px;
+  color: var(--darkblue);
+  line-height: 1rem;
+}
+
+.project-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .projects-content aside {
@@ -350,6 +401,10 @@ th {
 .projects-content img {
   max-width: 400px;
   margin-top: 1rem;
+}
+
+.projects-content ul li ol {
+  padding: 1rem;
 }
 
 /* Contact Section */
@@ -382,6 +437,7 @@ select:focus {
   border: none;
   border-radius: 8px;
   font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 .contact button:hover {
@@ -398,6 +454,18 @@ footer {
   padding: 10px 5px;
   font-size: 13px;
   text-align: center;
+}
+
+.about-content ul,
+.projects-content ul {
+  padding: 1.5rem;
+}
+
+.dot-bar {
+  color: var(--cblue);
+  display: block;
+  font-size: 3em;
+  line-height: 0;
 }
 
 @media screen and (max-width: 512px) {
