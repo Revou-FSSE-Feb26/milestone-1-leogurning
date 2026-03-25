@@ -31,15 +31,16 @@ This website serves as my digital business card. The goal was to create a fast-l
 
 - **CSS Box model Implementation:** Every element in CSS is essentially a box. It consists of Margin, Border, Padding, and Content. Using `box-sizing: border-box;` globally to ensure that padding and borders are included in the element's total width and height.
 - **CSS Grid Display:** Grid is perfect for the Heading, Aside, Main, and Footer structure. Define `grid-template-areas` to literally name where the "Header" "Aside" "Main/Content" "Footer" should go.
-  <img src="images/grid.png" width="150">
+
+  <img src="images/grid.png" width="250">
 
 - **CSS Flex Display:** Inside the header, use Flexbox for the logo and navigation. Inside the Home/Hero, About, Projects section, also use Flex display and Flex wrap display in Projects to align and adjust items correctly in the layout adaptively.
 
-  <img src="images/flex-nav01.png" width="150">
+  <img src="images/flex-nav01.png" width="250">
 
   <img src="images/flex-nav02.png" width="100">
 
-  <img src="images/flex.png" width="150">
+  <img src="images/flex.png" width="250">
 
 - **Google Font and Typography:** Implement Google Fonts, typograhy Font with various weight, size, color and multiple colors background (with text fill color and background clip). Also using linear gradient utility to combine several colors and its gradient
 
@@ -55,9 +56,9 @@ This website serves as my digital business card. The goal was to create a fast-l
   1. Only Desktop: the `Aside` is visible on the left, and shows all navigation links.
   2. Tab and Mobile: `Aside` disappear and `Header` Navigation bar will be displayed. Hamburger menu will be displayed only in Mobile.
 
-    <img src="images/grid.png" width="150">
+    <img src="images/grid.png" width="250">
     
-    <img src="images/flex-nav01.png" width="150">
+    <img src="images/flex-nav01.png" width="250">
     
     <img src="images/flex-nav02.png" width="150">
     
