@@ -13,6 +13,7 @@
   --darkblue: #03506e;
   --cblue: #0575e6;
   --cred: #ce3232;
+  --khaki: #f0e68c;
 }
 
 * {
@@ -128,7 +129,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: rgba(227, 239, 5, 0.932);
+  background: linear-gradient(45deg, var(--success), var(--primary));
   color: var(--dark);
   transform: scale(1.02);
 }
@@ -153,7 +154,7 @@ header nav ul li a:hover {
   height: 2px;
   background: var(--light);
   margin: 3px 0;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   border-radius: 2px;
 }
 
@@ -240,6 +241,7 @@ main {
   font-size: 1rem;
   align-items: center;
   padding: 2rem 2rem;
+  transition: all 0.3s ease;
   scroll-margin-top: 4rem;
 }
 
@@ -251,6 +253,49 @@ main {
 
 .home h1 {
   margin-bottom: 2rem;
+}
+
+.home-content .typing-effect {
+  font-family: monospace;
+  font-size: 2rem;
+
+  display: inline-block;
+  position: relative;
+  top: 14px;
+
+  /* Start hidden */
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  /* The cursor effect */
+  border-right: 2px solid #000;
+
+  /* Animation properties */
+  animation:
+    typing 3s steps(7) infinite alternate,
+    blink-cursor 0.75s step-end infinite;
+}
+
+/* The typing logic: expanding the width */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7ch;
+  } /* 'ch' represents the width of one character */
+}
+
+/* The cursor blinking logic */
+@keyframes blink-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .home-content,
@@ -369,6 +414,14 @@ th {
   background-color: var(--light);
 }
 
+.projects-content:hover {
+  color: var(--darker);
+  background-color: var(--khaki);
+  transition: transform 0.5s ease;
+  transform: translateY(-15px);
+  cursor: pointer;
+}
+
 .projects-content h3 {
   padding-bottom: 6px;
   color: var(--darkblue);
@@ -385,9 +438,9 @@ th {
   padding-left: 0.5rem;
   margin-left: 1rem;
   float: right;
-  box-shadow: inset 5px 0 5px -5px #29627e;
+  box-shadow: inset 5px 0 5px -5px var(--darkblue);
   font-style: italic;
-  color: #29627e;
+  color: var(--darkblue);
 }
 
 .projects-content aside > p {
@@ -427,12 +480,13 @@ select {
   border: 2px solid var(--gray);
   outline: none;
   resize: none;
+  transition: background-color 0.3s ease;
 }
 
 .contact form input:focus,
 textarea:focus,
 select:focus {
-  border: 2px solid var(--success);
+  background-color: var(--khaki);
 }
 
 .contact button {
@@ -663,6 +717,6 @@ footer {
   }
 
   .projects-content {
-    flex-basis: 500px;
+    flex-basis: 400px;
   }
 }
