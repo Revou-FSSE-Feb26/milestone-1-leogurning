@@ -66,6 +66,20 @@ This website serves as my digital business card. The goal was to create a fast-l
 
 - **Interaction: Pseudo-classes & Selectors:** These allow you to style elements based on their state or position (hover, nth-child). Also use `transform` property to rotate, scale, or move (translate) elements without breaking the document flow.
 
+- **Typewriter Animation:** The "typewriter" effect on the hero text is achieved using a combination of CSS Keyframes and the steps() timing function.
+
+  Logic: The container begins with a width of 0 and expands to 100%. By using steps(), the width increases in discrete increments corresponding to the number of characters, creating the illusion of real-time typing.
+
+  Cursor: A secondary animation handles the border-right blinking to simulate a terminal cursor.
+
+  <img src="images/typewriter-effect.png" width="150">
+
+- **Smooth State Transitions:** To ensure a fluid feel, all interactive elements (buttons, links, projects content, form input) leverage CSS Transitions.
+
+  a. Properties: primarily target background-color, transform, and box-shadow.
+
+  b. Duration: A standard 0.3s ease is applied to maintain a snappy yet organic feel, preventing jarring visual jumps when a user interacts with the UI.
+
 ---
 
 ## 🛠️ Technology Used
