@@ -76,7 +76,7 @@ header {
   grid-area: header;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   max-width: 1608px;
   padding: 0.8rem;
   background: rgba(10, 10, 15, 0.9);
