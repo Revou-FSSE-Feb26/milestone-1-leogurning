@@ -20,3 +20,16 @@ function closeMenu() {
   mobileNav.classList.remove("active");
   document.body.style.overflow = "auto";
 }
+
+// Preloader when page loads
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+
+  // Add the fade-out class
+  preloader.classList.add("preloader-hidden");
+
+  // Remove from DOM after the 1s transition ends
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 3000);
+});
