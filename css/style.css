@@ -567,6 +567,19 @@ footer {
   text-align: center;
 }
 
+.footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer .email-img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
 .about-content ul,
 .projects-content ul {
   padding: 1.5rem;
@@ -772,7 +785,7 @@ footer {
   .projects-content {
     flex-basis: 400px;
   }
-  footer p {
+  footer .footer-info {
     position: relative;
     left: 100px;
   }
