@@ -74,6 +74,10 @@ This website serves as my digital business card. The goal was to create a fast-l
 
   <img src="images/typewriter-effect.png" width="150">
 
+- **Preloader Spinner Animation:** Enhance user retention and visual polish with a lightweight CSS-driven preloader. This feature provides immediate visual feedback during the initial page load, masking asset delivery and ensuring a seamless transition to the fully rendered site.
+
+  <img src="images/preloader-spinner.png" width="150">
+
 - **Smooth State Transitions:** To ensure a fluid feel, all interactive elements (buttons, links, projects content, form input) leverage CSS Transitions.
 
   a. Properties: primarily target background-color, transform, and box-shadow.
