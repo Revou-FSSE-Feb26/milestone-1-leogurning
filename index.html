@@ -180,9 +180,9 @@
       </section>
 
       <!-- Projects Article  -->
-      <article id="projects" class="projects">
+      <section id="projects" class="projects">
         <h2>My Projects</h2>
-        <article class="projects-article">
+        <div class="projects-article">
           <!-- Project1 article content  -->
           <article class="projects-content">
             <div class="project-title">
@@ -235,9 +235,9 @@
               multi-page) website that serves as a central repository for your
               work, biography, and contact information.
             </p>
-            <aside>
+            <div class="side-info">
               <p>The Tech stack is using HTML5 and CSS</p>
-            </aside>
+            </div>
             <p>
               Before coding, it's vital to visualize how the elements sit on the
               page. Using a "Box Model" approach ensures the layout doesn't
@@ -248,8 +248,8 @@
               <figcaption>This is the Portfolio project website</figcaption>
             </figure>
           </article>
-        </article>
-      </article>
+        </div>
+      </section>
 
       <!-- Contact section  -->
       <section id="contact" class="contact">
@@ -293,7 +293,7 @@
           <br />
           <label for="reason">Reason for Contact:</label>
           <br />
-          <select name="reason" id="reason">
+          <select name="reason" id="reason" required>
             <option value="">--Please choose an option--</option>
             <option value="upskill">For Upskilling</option>
             <option value="work">Searching for work</option>

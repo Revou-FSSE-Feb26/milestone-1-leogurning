@@ -103,6 +103,17 @@ This website serves as my digital business card. The goal was to create a fast-l
 
 - **JavaScript: The Hamburger Toggle Class:** Instead of manually changing styles in JS, we use a Class to manage the state. The JS simply "toggles" a CSS class (like .active), and CSS handles the visual transition
 
+### Visual Studio Code Editor
+
+- **Utilize Visual Studio Code as the primary IDE**. It handles everything from syntax highlighting and IntelliSense to version control and integrated terminal operations.
+
+  **The Power-Ups: Extensions**
+  To bridge the gap between the editor and the browser, we rely on specific extensions that automate repetitive tasks. Key functionalities include: Live Server, Linting & Formating, Auto Completed.
+
+### Chrome Browser
+
+- **The Testing Ground: Google Chrome:** Google Chrome serves as our primary runtime and testing environment. Its V8 engine and DevTools suite provide the industry standard for: DOM inspection, Performance profiling, and view in several devices.
+
 ---
 
 ## 🚀 Getting Started
@@ -112,7 +123,22 @@ This website serves as my digital business card. The goal was to create a fast-l
 2.  **Open the project:**
     Simply open the `index.html` file in any modern web browser.
 
----
+3.  **📂 Project Structure:**
+    This directory contains the core files and folders for the website. Below is a breakdown of the organization:
+
+    ```
+    root/
+    │
+    ├── css/ # Stylesheets (style.css)
+    ├── images/ # Image assets (jpg, png, svg, etc.)
+    ├── js/ # JavaScript files (index.js)
+    │
+    ├── index.html # Main entry point of the website
+    └── README.md # Project documentation and info
+    ```
+
+4.  **📂 Deployment:**
+    This project using Github Pages feature. The Build and Deployment setting has been completed and it will deploy from main branch automatically if there is new push / code updated.
 
 ## 📧 Contact
 

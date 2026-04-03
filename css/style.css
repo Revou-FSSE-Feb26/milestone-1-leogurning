@@ -44,8 +44,7 @@ body {
     "footer";
 }
 
-section h2,
-article h2 {
+section h2 {
   font-size: 2rem;
   /* text-align: center; */
   margin-bottom: 3rem;
@@ -485,7 +484,7 @@ th {
   text-align: center;
 }
 
-.projects-content aside {
+.projects-content .side-info {
   width: 40%;
   padding-left: 0.5rem;
   margin-left: 1rem;
@@ -495,7 +494,7 @@ th {
   color: var(--darkblue);
 }
 
-.projects-content aside > p {
+.projects-content .side-info > p {
   margin: 0.5rem;
 }
 
